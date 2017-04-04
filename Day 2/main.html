@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+
+<form id="form" action="info.html" method="post" >
+	<div id="name" >
+		Name
+		<input type="text" name="firstname" value="Enter Firstname" onfocus="this.value=''">
+		<input type="text" name="lastname" value="Enter Lastname" onfocus="this.value=''">
+	</div>
+
+	<div id="gender" >
+		Gender<br>
+		<input type="radio" name="gender-male" value="gender-male" checked>Male<br>
+		<input type="radio" name="gender-female" value="gender-female">Female<br>
+		<input type="radio" name="gender-other" value="gender-other">Other<br>
+	</div>
+
+	<div id="hobby" >
+		Hobbies<br>
+		1.<input type="text" name="hobby1"><br>
+		2.<input type="text" name="hobby2"><br>
+		3.<input type="text" name="hobby3"><br>
+	</div>
+
+	<div  id="travel" >
+		Countries Visited :<br>
+		<input type="checkbox" name="USA">USA<br>
+		<input type="checkbox" name="UK">UK<br>
+		<input type="checkbox" name="France">France<br>
+		<input type="text" name="other" value="Other" onfocus="this.value=''"><br>
+	</div>
+
+	<div id="subjects" >
+		Subjects:<br>
+		<input type="text" name="subject"><br>
+		<input type="text" name="subject"><br>
+		<input type="text" name="subject"><br>
+	</div>
+
+	<input type="submit" value="Submit" >
+	<input type="reset" value="Reset" >
+</form>
