@@ -1,2 +1,4 @@
+<<<<<<< HEAD
 # Image-Processing-Lab
-Image Processing Lab for 7th semester B.Tech course at NIT Durgapur
+Image Processing Lab for 8th semester B.Tech course at NIT Durgapur
+

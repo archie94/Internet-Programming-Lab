@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Styling</title>
+	<h1>Group Details</h1>
+
+	<script type="text/javascript">
+		function changePageBackground(color) {
+			document.body.style.backgroundColor = color
+		}
+
+		function changeColor(color) {
+			document.body.style.color = color
+		}
+
+		function changeBorder(border_type) {
+			document.getElementById('body-main').style.border = "thick " + border_type + " #000000";
+		}
+
+		function tableAlign(positon) {
+			document.getElementById('table').setAttribute("align", positon);
+		}
+	</script>
+</head>
+
+<style type="text/css">
+	body { border: 5px solid black; background-color: #6AA121 }
+	th, td { padding: 15px; text-align: center;}
+	tr:hover {background-color: #f5f5f5}
+</style>
+
+<body id="body-main">
+	<img src="group.png" alt="Group icon" height="200px" width="200px" align="right" />
+
+	<table id='table' border="1" bgcolor="#837E7C" align="center" width="50%">
+		<tr>
+			<th>Name</th>
+			<th>Address</th>
+		</tr>
+
+		<tr id='table_row' bgcolor="#B6B6B4" >
+			<td>Anubhav Patnaik</td>
+			<td>Room:349 Hall 4, NIT Dgp</td>
+		</tr>
+
+		<tr id='table_row' bgcolor="#B6B6B4" >
+			<td>Arka Prava Basu</td>
+			<td>Room:114 Hall 4, NIT Dgp</td>
+		</tr>
+	</table>
+
+	<div id="border_button">
+			<input type="button" value="Border" />
+			<input type="button" value="Solid" onclick="changeBorder('solid')" />
+			<input type="button" value="Dotted" onclick="changeBorder('dotted')" />
+			<input type="button" value="Dashed" onclick="changeBorder('dashed')" />
+			<input type="button" value="Double" onclick="changeBorder('double')" />
+	</div>
+
+	<div id="background_button">
+		<input type="button" value="Background" onclick="changePageBackground('#6AA121')" />
+		<input type="button" value="red" onclick="changePageBackground('red')" />
+		<input type="button" value="yellow" onclick="changePageBackground('yellow')" />
+		<input type="button" value="cyan" onclick="changePageBackground('cyan')" />
+		<input type="button" value="blue" onclick="changePageBackground('blue')" />
+	</div>
+
+	<div id="color_button">
+		<input type="button" value="Text" onclick="changeColor('black')" />
+		<input type="button" value="red" onclick="changeColor('red')" />
+		<input type="button" value="yellow" onclick="changeColor('yellow')" />
+		<input type="button" value="cyan" onclick="changeColor('cyan')" />
+		<input type="button" value="blue" onclick="changeColor('blue')" />
+	</div>
+
+	<div id="align_button">
+		<input type="button" value="Align" />
+		<input type="button" value="Left" onclick="tableAlign('left')" />
+		<input type="button" value="Center" onclick="tableAlign('center')" />
+		<input type="button" value="Right" onclick="tableAlign('right')" />
+	</div>
+
+</body>
+</html>

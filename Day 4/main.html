@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+	<script type="text/javascript">
+		function onSubmit() {
+			document.getElementById('form').innerHTML="Success!"
+		}
+	</script>
+</head>
+
+<body>
+	<form id="form" action="javascript:onSubmit()" method="post">
+		<fieldset>
+			<legend>Student Form</legend>
+
+			<br>
+
+			<div>
+				<label for="code">Country Code</label>
+				<input type="text" id="code" value="" aria-describedby="name-format" pattern="[+]\d{2,3}" />
+				<span id="name-format" class="help">Format : +XYZ</span>
+			</div>
+			
+			<br>
+			
+			<div>
+				<label for="phone">Phone Number</label>
+				<input type="phone" id="phone" value="" aria-describedby="name-format" pattern="\d{10}" />
+				<span id="name-format" class="help">Format : 10 digit phone number</span>
+			</div>
+
+			<br>
+
+			<div>
+				<label for="email">Email</label>
+				<input type="email" id="email" value="" />
+			</div>
+
+			<br>
+
+			<div>
+				<label for="mandatory">Adhaar Number*</label>
+				<input type="text" id="mandatory" required pattern="\d{16}" />
+			</div>
+
+			<br>
+
+			<div>
+				<label for="dob">Date of Birth</label>
+				<input type="text" id="dob" pattern="[0-3][0-9][/][0-1][0-9][/]\d{4}">
+			</div>
+
+			<br>
+
+			<div>
+				<label for="sub">Subjects</label>
+				<input type="text" id="sub" pattern="[[a-zA-Z]{3,}[,]]{3,}">
+			</div>
+
+			<br>
+
+			<div>
+				<label for="roll">Roll No.</label>
+				<input type="text" id="roll" pattern="\d{2}[/][a-zA-Z]{2}[/]\d{2,}">
+			</div>
+
+			<br>
+
+			<div>
+				<input type="submit" id="submit" value="Submit">
+				<input type="reset" id="reset" value="Reset">
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>
